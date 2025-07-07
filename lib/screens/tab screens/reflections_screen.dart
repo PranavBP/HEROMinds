@@ -7,7 +7,6 @@ import '../../models/reflection.dart';
 import '../../models/theme.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../widgets/Reflections/past_reflections_screen.dart';
-import 'package:hero_minds/widgets/Reflections/reflection_list_view.dart';
 
 // Simulate a streak count for demonstration purposes
 final streakCountProvider = Provider<int>((ref) => 5);
@@ -299,9 +298,10 @@ class _ReflectionsScreenState extends ConsumerState<ReflectionsScreen> {
                         TextButton(
                           onPressed: _hasChanges() ? cancelEditing : null,
                           style: TextButton.styleFrom(
+                            backgroundColor: Colors.white,
                             foregroundColor: _hasChanges()
-                                ? theme.textColor.withOpacity(0.7)
-                                : theme.textColor.withOpacity(0.4),
+                                ? Colors.red
+                                : theme.textColor.withValues(alpha: 0.4)
                           ),
                           child: const Text('Cancel'),
                         ),
