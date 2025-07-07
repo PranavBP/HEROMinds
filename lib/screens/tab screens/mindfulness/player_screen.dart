@@ -39,6 +39,8 @@ class _PlayerScreenState extends State<PlayerScreen> {
   }
 
   void initializePlayer() async {
+    _audioPlayer = AudioPlayer();
+
     final fileInfo = await DefaultCacheManager()
         .getFileFromCache('videos/${widget.meditation.backgroundVideo}.mp4');
     String videoPath;
@@ -72,10 +74,34 @@ class _PlayerScreenState extends State<PlayerScreen> {
       })
       ..setLooping(true); // Set video to loop
 
-    _audioPlayer = AudioPlayer();
+    final audioFileInfo = await DefaultCacheManager().getFileFromCache(
+        'audio/${widget.meditation.track}.${widget.meditation.trackExtension}');
+
+    String audioPath;
+
+    if (audioFileInfo == null) {
+      try {
+        final audioUrl = await FirebaseStorage.instance
+            .ref(
+                'audio/${widget.meditation.track}.${widget.meditation.trackExtension}')
+            .getDownloadURL();
+        final file = await DefaultCacheManager().getSingleFile(audioUrl);
+        audioPath = file.path;
+      } catch (e) {
+        // Handle error if audio fetch fails
+        return;
+      }
+    } else {
+      audioPath = audioFileInfo.file.path;
+    }
+
+    // _audioPlayer = AudioPlayer();
     try {
-      await _audioPlayer.setSourceAsset(
-          'audio/${widget.meditation.track}.${widget.meditation.trackExtension}');
+      // await _audioPlayer.setSourceAsset(
+      //     'audio/${widget.meditation.track}.${widget.meditation.trackExtension}');
+
+      await _audioPlayer.setSourceDeviceFile(audioPath);
+
       _audioPlayer.onPositionChanged.listen((event) {
         _audioPositionStreamController.add(event);
       });
@@ -102,12 +128,14 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
   @override
   void dispose() {
-    super.dispose();
+    
+    _videoController.dispose();
+    _audioPlayer.dispose();
+
     _videoPositionStreamController.close();
     _audioPositionStreamController.close();
 
-    _videoController.dispose();
-    _audioPlayer.dispose();
+    super.dispose();
   }
 
   @override
