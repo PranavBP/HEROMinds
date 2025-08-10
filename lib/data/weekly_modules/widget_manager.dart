@@ -60,37 +60,40 @@ Widget buildDropdownWithWidgets(
 }
 
 Widget buildMeditationCard(BuildContext context, Meditation meditation) {
-  return Card(
-    elevation: 2,
-    margin: const EdgeInsets.symmetric(vertical: 8),
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-    child: ListTile(
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(8),
-        child: Image.asset(
-          meditation.image,
-          width: 60,
-          height: 60,
-          fit: BoxFit.cover,
-        ),
-      ),
-      title: Text(
-        meditation.title,
-        style: const TextStyle(fontWeight: FontWeight.bold),
-      ),
-      subtitle: Text(
-        meditation.description,
-        maxLines: 2,
-        overflow: TextOverflow.ellipsis,
-      ),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => PlayerScreen(meditation: meditation),
+  return Padding(
+    padding: const EdgeInsets.all(16.0),
+    child: Card(
+      elevation: 2,
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: ListTile(
+        leading: ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: Image.asset(
+            meditation.image,
+            width: 60,
+            height: 60,
+            fit: BoxFit.cover,
           ),
-        );
-      },
+        ),
+        title: Text(
+          meditation.title,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        subtitle: Text(
+          meditation.description,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+        ),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => PlayerScreen(meditation: meditation),
+            ),
+          );
+        },
+      ),
     ),
   );
 }
@@ -231,11 +234,11 @@ Widget buildDropdownBase({
     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
     child: Container(
       decoration: BoxDecoration(
-        color: Colors.grey.shade100,
+        color: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.5),
             blurRadius: 4,
             offset: const Offset(0, 2),
           )
