@@ -249,7 +249,7 @@ class Week5 extends StatelessWidget {
           ),
           buildDropdown(
             context,
-            'Reflection Questions: Three Questions',
+            'Three Questions to Consider',
             [
               "Which regular daily activities in your life feel nourishing, which feel depleting, and which are neutral for you?",
               "Where are you noticing moments of mindfulness showing up in your daily life?",
@@ -259,7 +259,7 @@ class Week5 extends StatelessWidget {
           //Body scan all 3 videos to be accessed by user here(as a drop down)
           buildWidgetDropdown(
             context,
-            'Formal Practices each day – Body Scan or Mindful Movement practice. Sitting Practice (choose one – maybe one you haven’t tried before)',
+            'Formal Practices each day – Body Scan or Mindful Movements and a Sitting Practice.',
             [
               // Body Scan Practices
               buildMeditationCard(
@@ -325,15 +325,15 @@ class Week5 extends StatelessWidget {
               buildMeditationCard(
                 context,
                 Meditation(
-                  title: "12 Min Focused Attention",
+                  title: "7 Min Loving Kindness",
                   description:
-                      "Center your mind and find clarity with this 12-minute focused attention practice. A simple yet powerful way to sharpen awareness and cultivate inner peace.",
-                  duration: 801,
-                  track: "focused-attention-12",
+                      "In a busy and uncertain world, simple acts of love and kindness shine brightly. A smile, kind word, or helping hand can transform someone's day and create ripples of positivity. Love brings people together, fostering belonging and mutual respect. By embracing love and kindness, we uplift others and enrich our own lives, making the world more compassionate and harmonious.",
+                  duration: 459,
+                  track: "LovingAndKindness",
                   trackExtension: "m4a",
-                  image: "assets/mindfulness/photo12.jpg",
-                  backgroundVideo: "tenMinBS",
-                  category: "Sitting Practices",
+                  image: "assets/mindfulness/photo9.jpg",
+                  backgroundVideo: "lovingKind",
+                  category: "Sitting Practices (Short)",
                 ),
               ),
               buildMeditationCard(

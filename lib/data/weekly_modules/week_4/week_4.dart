@@ -26,7 +26,7 @@ class Week4 extends StatelessWidget {
           ),
           buildDropdown(
             context,
-            'Reflection Questions: Three Questions',
+            'Three Questions to Consider',
             [
               "As you practice mindfulness, what are you starting to notice about how you usually react to stress?",
               "How might responding to stress more intentionally and skillfully affect you and the people who matter most in your life?",
@@ -40,7 +40,7 @@ class Week4 extends StatelessWidget {
           // all videos  Yoga and walking and sitting practice to be accessed by user here(as a drop down)
           buildWidgetDropdown(
             context,
-            'Formal Practices each day - Body Scan, Mindful Movement, or Sitting Practice',
+            'Formal Practices each day - Body Scan or Mindful Movements and a Sitting Practice.',
             [
               // Body Scan
               buildMeditationCard(

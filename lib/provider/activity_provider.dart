@@ -29,7 +29,7 @@ final List<Activity> activities = [
   //     modules: []),
   Activity(
     name: "Week 2",
-    desc: "Practice! Practice! Practice!",
+    desc: "Welcome to Week 2!",
     image: "assets/images/week2p.jpg",
     modules: [],
     data: const Week2(),

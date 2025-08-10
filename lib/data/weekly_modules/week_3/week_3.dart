@@ -28,7 +28,7 @@ class Week3 extends StatelessWidget {
 
           buildDropdown(
             context,
-            'Reflection Questions: Three Questions',
+            'Three Questions to Consider',
             [
               "What are some signs—physical, mental, emotional—that let you know you’re experiencing chronic stress?",
               "What are the healthy ways you cope with stress? What are the unhealthy ways you cope with or distract yourself from stress?",

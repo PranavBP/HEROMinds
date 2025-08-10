@@ -168,20 +168,56 @@ Widget buildDropdown(BuildContext context, String title, List<String> content) {
   );
 }
 
+// Widget buildDropdownParagraph(
+//     BuildContext context, String title, String paragraph) {
+//   return buildDropdownBase(
+//     context: context,
+//     title: title,
+//     children: [
+//       Padding(
+//         padding: const EdgeInsets.all(12.0),
+//         child: Text(
+//           paragraph,
+//           textAlign: TextAlign.justify,
+//           style: const TextStyle(fontSize: 16),
+//         ),
+//       )
+//     ],
+//   );
+// }
 Widget buildDropdownParagraph(
-    BuildContext context, String title, String paragraph) {
+  BuildContext context,
+  String title,
+  String paragraph,
+) {
   return buildDropdownBase(
     context: context,
     title: title,
     children: [
-      Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Text(
-          paragraph,
-          textAlign: TextAlign.justify,
-          style: const TextStyle(fontSize: 16),
+      Align(
+        alignment: Alignment.centerLeft,
+        child: ConstrainedBox(
+          constraints:
+              const BoxConstraints(maxWidth: 1000), // or omit if not needed
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Text(
+              paragraph,
+              softWrap: true,
+              textAlign: TextAlign.justify,
+              textWidthBasis: TextWidthBasis.parent,
+              textHeightBehavior: const TextHeightBehavior(
+                applyHeightToFirstAscent: false,
+                applyHeightToLastDescent: false,
+              ),
+              style: const TextStyle(
+                fontSize: 16,
+                height: 1.4,
+              ),
+            ),
+          ),
         ),
-      )
+      ),
     ],
   );
 }

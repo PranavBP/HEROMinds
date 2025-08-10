@@ -24,20 +24,20 @@ class Week6 extends StatelessWidget {
             'Studies have found that practicing mindfulness every day can actually change the structure of the brain. Just like regular workouts build physical strength, daily mindfulness can boost the brain’s ability to handle stress, stay focused, manage emotions, and connect us more deeply with ourselves, our values, and the people around us.',
           ),
           const SizedBox(height: 16),
-          buildVideoButton(
+          sectionWrapper(buildVideoButton(
               'Neuroscience of Mindfulness',
-              //need to update the link
-              'https://www.youtube.com/watch?v=ZToicYcHIOU'), //temp link
-          buildVideoButton(
-              'What is resilience, and inner strength?',
-              //need to update the link
-              'https://www.youtube.com/watch?v=U9YKY7fdwyg'), //temp link
+              //updated the link
+              'https://www.youtube.com/watch?v=vo_VANW35b0')),
+          sectionWrapper(buildVideoButton(
+              'What is resilience and inner strength?',
+              //updated the link
+              'https://www.youtube.com/watch?v=WuyPuH9ojCE')),
           buildDropdown(
             context,
-            'Reflection Questions: Three Questions',
+            'Three Questions to Consider',
             [
               "What are the three top reasons you want to continue practicing mindfulness after this program ends?",
-              "Why do you believe will it be worth it to keep making time to practice?",
+              "Why do you believe it will be worth it to keep making time to practice?",
               "If you choose to keep going, how will you commit to making mindfulness a regular part of your life?",
             ],
           ),

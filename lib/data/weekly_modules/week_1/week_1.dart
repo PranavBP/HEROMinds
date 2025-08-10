@@ -24,22 +24,40 @@ class Week1 extends StatelessWidget {
           sectionWrapper(buildVideoButton(
               'What is Mindfulness?',
               //need to change the videos from Firebase
-              'https://www.youtube.com/watch?v=ZToicYcHIOU')), //temp link
+              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713')),
           sectionWrapper(buildVideoButton(
               'Hero Mind Introduction',
               //need to change the videos from Firebase
-              'https://www.youtube.com/watch?v=U9YKY7fdwyg')), //temp link
-          sectionWrapper(buildDropdownParagraph(
+              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20Two.mp4?alt=media&token=b3e9868b-668c-4828-893e-6f01d96f4bf8')), //temp link
+          sectionWrapper(buildVideoButton('Hero Mind App Introduction',
+              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FintroHero.mp4?alt=media&token=e42c12c6-dda6-4ee0-9997-f6079d09250c')), // Firebase video
+
+          buildDropdownParagraph(
             context,
             'Brief Overview of Week 1',
-            'Mindfulness is the awareness that arises when we intentionally pay attention to the present moment without judgment. This capacity for mindfulness already exists within us—we simply need to remember to tap into it. This is why consistent practice is so important.',
-          )),
+            'Mindfulness is the awareness that arises when we intentionally pay attention to the present moment without judgment. This capacity for mindfulness already exists within us — we simply need to remember to tap into it. This is why consistent practice is so important.',
+          ),
           //video needs to be updated once Dr. chang gives us
-          (buildVideoButton('Turn Off Autopilot',
-              'https://www.youtube.com/watch?v=dCr8w6g5U9E')), //temp link
+          // sectionWrapper(buildVideoButton('Turn Off Autopilot',
+          //     'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/audio%2Fautopilot.mp3?alt=media&token=11313ca4-dc0f-4baa-871b-1337bd4b399e')), //temp link
+          buildMeditationCard(
+            context,
+            Meditation(
+              title: "Turn Off Autopilot",
+              description:
+                  "Reconnect with the present moment and regain mindful control.",
+              duration: 95,
+              track: "autopilot",
+              trackExtension: "mp3",
+              image: "assets/mindfulness/photo1.jpg",
+              backgroundVideo: "fiveMinBS",
+              category: "Mindfulness Practices",
+            ),
+          ),
+
           buildDropdown(
             context,
-            'Reflection Questions: Three Questions',
+            'Three Questions to Consider',
             [
               "How can you tell when you’re in autopilot mode and when you’re fully aware and awake in the moment?",
               "What are the downsides of spending too much time in autopilot mode?",
@@ -106,7 +124,7 @@ class Week1 extends StatelessWidget {
           buildDropdownParagraph(
             context,
             'Informal Practice',
-            'Mindful Eating - Raisin Meditation (Choose one meal, or even just part of a meal, to eat with full awareness. Focus on the experience using all your senses—taste, smell, texture, and the act of eating itself.)',
+            'Mindful Eating - Choose one meal, or even just part of a meal, to eat with full awareness. Focus on the experience using all your senses—taste, smell, texture, and the act of eating itself.',
           ),
 
           const SizedBox(height: 30),

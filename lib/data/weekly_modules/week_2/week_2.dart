@@ -23,12 +23,12 @@ class Week2 extends StatelessWidget {
           buildDropdownParagraph(
             context,
             'Brief Overview of Week 2',
-            'The mind has an incredible ability to travel through time—reflecting on the past, anticipating the future—but the body is always grounded in the present. Through the body and the senses, we always have direct access to the present moment.',
+            'The mind has an incredible ability to travel through time reflecting on the past, anticipating the future — but the body is always grounded in the present. Through the body and the senses, we always have direct access to the present moment.',
           ),
 
           buildDropdown(
             context,
-            'Reflection Questions: Three Questions',
+            'Three Questions to Consider',
             [
               "What challenges or surprises are you noticing in the daily body scan practice?",
               "What are some of the ways that bringing more mindful awareness into your day could benefit you?",
