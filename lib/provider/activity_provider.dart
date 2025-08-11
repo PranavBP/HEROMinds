@@ -7,6 +7,7 @@ import 'package:hero_minds/data/weekly_modules/week_5/week_5.dart';
 import 'package:hero_minds/data/weekly_modules/week_6/week_6.dart';
 import 'package:hero_minds/models/activity.dart';
 import 'package:hero_minds/models/modules.dart';
+// import 'package:hero_minds/models/modules.dart';
 
 // Sample list of activities
 final List<Activity> activities = [
@@ -14,7 +15,13 @@ final List<Activity> activities = [
       name: "Week 1",
       desc: "Get Started!",
       image: "assets/images/intro.jpg",
-      modules: [],
+      modules: [
+        Module(
+            title: "Intro to HM",
+            assetUrl: "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713",
+            isVideo: true,
+            isCompleted: false)
+      ],
       data: const Week1()),
   // Activity(
   //   name: "Week 2",

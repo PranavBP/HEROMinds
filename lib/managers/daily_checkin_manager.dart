@@ -1,5 +1,4 @@
 import 'package:firebase_database/firebase_database.dart';
-import 'package:hero_minds/widgets/Popup/daily_checkin_pop.dart';
 
 class DailyCheckInManager {
   final DatabaseReference _database = FirebaseDatabase.instance.ref();

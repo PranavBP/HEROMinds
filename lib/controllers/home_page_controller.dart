@@ -22,7 +22,7 @@ class HomePageController {
 
       return {
         'userFullName': user?.firstName ?? 'User',
-        'dailyQuote': quote ?? 'No quote available today!',
+        'dailyQuote': quote,
       };
     } catch (e) {
       debugPrint("Error fetching data: $e");

@@ -48,7 +48,7 @@ dependencies:
   audioplayers: ^6.0.0
   firebase_storage: ^13.0.0
   flutter_cache_manager: ^3.3.2
-  youtube_player_flutter: ^9.1.1
+  youtube_player_flutter: ^9.1.2
   url_launcher: ^6.3.0
   image_picker: ^1.1.2
   lottie: ^3.2.0

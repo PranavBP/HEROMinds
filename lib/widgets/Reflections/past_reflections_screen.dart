@@ -377,7 +377,7 @@ class PastReflectionsScreen extends ConsumerWidget {
                           Row(
                             children: [
                               Text(
-                                "Mood: ${reflection.mood ?? 'N/A'}",
+                                "Mood: ${reflection.mood}",
                                 style: TextStyle(
                                   color: theme.textColor.withOpacity(0.7),
                                   fontSize: 12,
