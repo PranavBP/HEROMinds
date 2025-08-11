@@ -9,7 +9,6 @@ import 'package:hero_minds/provider/theme_provider.dart';
 import 'package:hero_minds/widgets/Common/custom_app_bar.dart';
 import 'package:hero_minds/widgets/Common/gradient_layer.dart';
 import 'package:flutter/services.dart'; // For PlatformException
-import 'package:hero_minds/models/user.dart';
 import 'package:hero_minds/screens/daily-checkin/config_daily_checkin.dart';
 
 class ProfilePage extends ConsumerStatefulWidget {

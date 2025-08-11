@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:hero_minds/managers/auth_manager.dart';
 import 'package:hero_minds/provider/auth_provider.dart';
 import 'package:hero_minds/screens/login-registration/forgot_pw_screen.dart';
 import 'package:hero_minds/widgets/Auth/auth_text_field.dart';

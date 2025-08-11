@@ -39,7 +39,9 @@ class ActivityCard extends StatelessWidget {
                 // color: Colors.black.withOpacity(0.5),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16.0),
-                  color: Colors.black.withOpacity(0.6),
+                  color: Colors.black.withValues(
+                    alpha: 0.6,
+                  ),
                 ),
                 padding:
                     const EdgeInsets.symmetric(vertical: 5, horizontal: 16),

@@ -26,13 +26,10 @@ class Week6 extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           sectionWrapper(buildVideoButton(
-              'What is Mindfulness?',
-              //need to change the videos from Firebase
-              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2Fneuro.mp4?alt=media&token=f3b228e1-4664-407b-8339-71dbbc30e708')),
-          sectionWrapper(buildVideoButton(
-              'What is resilience and inner strength?',
+              'Neuroscience of Mindfulness',
               //updated the link
-              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FstressBrain.mp4?alt=media&token=b7ee427c-272a-4a2c-8479-d4a0e3570f5f')),
+              'https://www.youtube.com/watch?v=WuyPuH9ojCE')),
+
           buildDropdown(
             context,
             'Three Questions to Consider',
@@ -47,7 +44,8 @@ class Week6 extends StatelessWidget {
             context,
             Meditation(
               title: "Next Steps",
-              description: "Next Steps in your mindfulness journey.",
+              description:
+                  "Reconnect with the present moment and regain mindful control.",
               duration: 95,
               track: "nextstep",
               trackExtension: "mp3",

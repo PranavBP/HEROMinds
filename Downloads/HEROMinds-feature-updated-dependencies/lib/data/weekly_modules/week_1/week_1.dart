@@ -15,22 +15,12 @@ class Week1 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //Header
-          const Text(
-            'Week 1: Awareness',
-            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
-          ),
+          // const Text(
+          //   'Week 1: Awareness',
+          //   style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+          // ),
           //Videos needs to be changed with the one given
           const SizedBox(height: 16),
-          sectionWrapper(buildVideoButton(
-              'What is Mindfulness?',
-              //need to change the videos from Firebase
-              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713')),
-          sectionWrapper(buildVideoButton(
-              'Hero Mind Introduction',
-              //need to change the videos from Firebase
-              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20Two.mp4?alt=media&token=b3e9868b-668c-4828-893e-6f01d96f4bf8')), //temp link
-          sectionWrapper(buildVideoButton('Hero Mind App Introduction',
-              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FintroHero.mp4?alt=media&token=e42c12c6-dda6-4ee0-9997-f6079d09250c')), // Firebase video
 
           buildDropdownParagraph(
             context,
@@ -43,14 +33,14 @@ class Week1 extends StatelessWidget {
           buildMeditationCard(
             context,
             Meditation(
-              title: "Turn Off Autopilot",
+              title: "Mindfulness and 1st Responders",
               description:
                   "Reconnect with the present moment and regain mindful control.",
               duration: 95,
-              track: "autopilot",
+              track: "mindful1",
               trackExtension: "mp3",
-              image: "assets/mindfulness/photo1.jpg",
-              backgroundVideo: "fiveMinBS",
+              image: "assets/mindfulness/photo9.jpg",
+              backgroundVideo: "mindful1",
               category: "Mindfulness Practices",
             ),
           ),

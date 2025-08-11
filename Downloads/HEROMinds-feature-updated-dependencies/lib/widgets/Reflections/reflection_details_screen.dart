@@ -107,7 +107,7 @@ class ReflectionDetailsScreen extends ConsumerWidget {
                                 ),
                                 const SizedBox(width: 10),
                                 Text(
-                                  'Mood: ${reflection.mood ?? 'N/A'}',
+                                  'Mood: ${reflection.mood}',
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
