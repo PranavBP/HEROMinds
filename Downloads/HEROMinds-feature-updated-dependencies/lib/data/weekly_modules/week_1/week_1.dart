@@ -30,20 +30,22 @@ class Week1 extends StatelessWidget {
           //video needs to be updated once Dr. chang gives us
           // sectionWrapper(buildVideoButton('Turn Off Autopilot',
           //     'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/audio%2Fautopilot.mp3?alt=media&token=11313ca4-dc0f-4baa-871b-1337bd4b399e')), //temp link
-          buildMeditationCard(
-            context,
-            Meditation(
-              title: "Mindfulness and 1st Responders",
-              description:
-                  "Reconnect with the present moment and regain mindful control.",
-              duration: 95,
-              track: "mindful1",
-              trackExtension: "mp3",
-              image: "assets/mindfulness/photo9.jpg",
-              backgroundVideo: "mindful1",
-              category: "Mindfulness Practices",
-            ),
-          ),
+          sectionWrapper(buildVideoButton('Mindfulness and 1st Responders',
+              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2Fmindful1.mp4?alt=media&token=dd976c9b-bbd0-466c-9fab-3fb3b77b37cd')),
+          // buildMeditationCard(
+          //   context,
+          //   Meditation(
+          //     title: "Mindfulness and 1st Responders",
+          //     description:
+          //         "Reconnect with the present moment and regain mindful control.",
+          //     duration: 95,
+          //     track: "mindful1",
+          //     trackExtension: "mp3",
+          //     image: "assets/mindfulness/photo9.jpg",
+          //     backgroundVideo: "mindful1",
+          //     category: "Mindfulness Practices",
+          //   ),
+          //),
 
           buildDropdown(
             context,

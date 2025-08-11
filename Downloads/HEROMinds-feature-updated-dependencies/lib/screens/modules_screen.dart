@@ -134,10 +134,11 @@ class ModuleScreen extends ConsumerWidget {
         title: const Text("Weekly Modules"),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (activity.name == "Week 1") // Check if the activity is Week 1
             const Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Text(
                 'Week 1: Awareness',
                 style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
