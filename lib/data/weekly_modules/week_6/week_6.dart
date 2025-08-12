@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hero_minds/data/weekly_modules/widget_manager.dart';
+import 'package:hero_minds/models/meditation_model.dart';
 
 class Week6 extends StatelessWidget {
   const Week6({super.key});
@@ -23,15 +24,13 @@ class Week6 extends StatelessWidget {
             'Brief Overview of Week 6',
             'Studies have found that practicing mindfulness every day can actually change the structure of the brain. Just like regular workouts build physical strength, daily mindfulness can boost the brain’s ability to handle stress, stay focused, manage emotions, and connect us more deeply with ourselves, our values, and the people around us.',
           ),
-          const SizedBox(height: 16),
-          sectionWrapper(buildVideoButton(
+          // const SizedBox(height: 8),
+          sectionWrapper(
+            buildVideoButton(
               'Neuroscience of Mindfulness',
-              //updated the link
-              'https://www.youtube.com/watch?v=vo_VANW35b0')),
-          sectionWrapper(buildVideoButton(
-              'What is resilience and inner strength?',
-              //updated the link
-              'https://www.youtube.com/watch?v=WuyPuH9ojCE')),
+              'https://www.youtube.com/watch?v=WuyPuH9ojCE',
+            ),
+          ),
           buildDropdown(
             context,
             'Three Questions to Consider',
@@ -42,13 +41,19 @@ class Week6 extends StatelessWidget {
             ],
           ),
 
-          buildDropdownParagraph(
+          buildMeditationCard(
             context,
-            'Looking Forward',
-            'As you complete this 6-week mindfulness journey, take a moment to appreciate the time and care you’ve given to yourself. Whether you practiced every day or just dipped your toes in, you’ve planted seeds that can continue to grow with intention and consistency.\n\n'
-                'Reflect on the practices that resonated most with you and consider how they might support you moving forward. Mindfulness isn’t about perfection, success, or failure—it’s about presence and persistence.\n\n'
-                'Remember, life is made up of moments—and any moment can become mindful when we choose to pay attention with intention and curiosity.\n\n'
-                'Thank you for being part of this experience. May your practice continue to support you in meaningful and lasting ways.',
+            Meditation(
+              title: "Next Steps",
+              description:
+                  "Reconnect with the present moment and regain mindful control.",
+              duration: 95,
+              track: "nextstep",
+              trackExtension: "mp3",
+              image: "assets/mindfulness/photo13.jpg",
+              backgroundVideo: "sleepMedi",
+              category: "Mindfulness Practices",
+            ),
           ),
 
           const SizedBox(height: 30),
