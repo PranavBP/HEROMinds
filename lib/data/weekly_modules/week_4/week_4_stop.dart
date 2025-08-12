@@ -24,11 +24,11 @@ class StopPracticeView extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(4.0),
+            padding: const EdgeInsets.all(2.0),
             child: Image.asset(
                 'assets/images/stop2.png', // Add your image to assets
                 height: 100,
-                width: 100),
+                width: 100,),
           ),
           const StopCard(
             title: 'S - Stop',
@@ -39,7 +39,7 @@ class StopPracticeView extends StatelessWidget {
               '• Sensations… (physical sensations, tightness, holding, lightness, etc.)',
               '• Acknowledge and register your experience, even if it’s uncomfortable…',
             ],
-            gradientColors: [Colors.red, Colors.orange],
+            gradientColors: [Color(0xFFB71C1C), Color(0xFFE65100)],
           ),
           const StopCard(
             title: 'T - “Take” a Breath',
@@ -47,7 +47,7 @@ class StopPracticeView extends StatelessWidget {
               '• Gently direct full attention to breathing, to each in breath and each out breath as they follow, one after the other.',
               '• Your breath can function as an anchor to bring you into the present and help you tune into a state of awareness and stillness…',
             ],
-            gradientColors: [Colors.orange, Colors.yellow],
+            gradientColors: [Color(0xFFE65100), Color(0xFFF57F17)],
           ),
           const StopCard(
             title: 'O - Observe',
@@ -55,7 +55,7 @@ class StopPracticeView extends StatelessWidget {
               '• Expand the field of your awareness around and beyond your breathing, so that it includes a sense of the body as a whole, your posture, your facial expression, and then further outward to what is happening around you: sights, sounds, smells, etc.',
               '• As best you can, bring this expanded awareness to each moment…',
             ],
-            gradientColors: [Colors.yellow, Colors.green],
+            gradientColors: [Color(0xFFF57F17), Color(0xFF2E7D32)],
           ),
           const StopCard(
             title: 'P - Proceed',
@@ -63,7 +63,7 @@ class StopPracticeView extends StatelessWidget {
               '• Let your attention now move into the world around you, sensing how things are right now. Rather than reacting habitually or mechanically, be curious and open, responding naturally and with kindness.',
               '• You may be surprised by what happens next after having created this pause…',
             ],
-            gradientColors: [Colors.green, Colors.blue],
+            gradientColors: [Color(0xFF2E7D32), Color(0xFF1565C0)],
           ),
         ],
       ),
@@ -86,7 +86,7 @@ class StopCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 2.0),
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
@@ -122,6 +122,7 @@ class StopCard extends StatelessWidget {
                       text,
                       style: const TextStyle(
                         fontSize: 17,
+                        fontWeight: FontWeight.w400,
                         color: Colors.white,
                       ),
                       textAlign: TextAlign.left,

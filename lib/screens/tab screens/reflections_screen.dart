@@ -204,7 +204,6 @@ class _ReflectionsScreenState extends ConsumerState<ReflectionsScreen> {
           ),
         ),
         backgroundColor: theme.backgroundGradient[0],
-        elevation: 4,
         centerTitle: false,
       ),
       body: Stack(

@@ -9,7 +9,7 @@ class Week3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(1.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -26,14 +26,12 @@ class Week3 extends StatelessWidget {
             'Stress isn’t a bad thing; it can be a powerful motivator and even a lifesaver in certain situations. However, when stress becomes chronic, it can take a serious toll on our physical health, mental well-being, and our relationships. Practicing mindfulness can help us shift our perception of stress and change the way we respond to it.',
           ),
 
-          sectionWrapper(
-            buildYoutubeVideoButton(
-              context,
-              'Types of Stress',
-              'https://www.youtube.com/watch?v=FnMLlQaq5T0',
-            ),
+          buildYoutubeVideoButton(
+            context,
+            'Types of Stress',
+            'https://www.youtube.com/watch?v=FnMLlQaq5T0',
           ),
-
+          
           buildDropdown(
             context,
             'Three Questions to Consider',

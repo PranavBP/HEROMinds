@@ -240,7 +240,14 @@ class ModuleScreen extends ConsumerWidget {
  
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Weekly Modules"),
+        centerTitle: false,
+        title: Text(
+          "",
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

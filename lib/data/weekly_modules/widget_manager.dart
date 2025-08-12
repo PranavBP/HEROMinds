@@ -63,7 +63,7 @@ Future<void> _openYouTubeSheet(
 /// Your button, now opening the modal sheet.
 Widget buildYoutubeVideoButton(BuildContext context, String title, String url) {
   return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 6.0),
+    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0,),
     child: SizedBox(
       width: double.infinity,
       height: 56,
@@ -81,7 +81,7 @@ Widget buildYoutubeVideoButton(BuildContext context, String title, String url) {
             borderRadius: BorderRadius.circular(12),
           ),
           padding: const EdgeInsets.symmetric(horizontal: 12.0),
-          elevation: 2,
+          elevation: 4,
         ),
       ),
     ),
@@ -127,7 +127,7 @@ Widget buildMeditationCard(BuildContext context, Meditation meditation) {
   return Padding(
     padding: const EdgeInsets.all(2.0),
     child: Card(
-      elevation: 2,
+      elevation: 8,
       margin: const EdgeInsets.symmetric(vertical: 2.0),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: ListTile(
@@ -185,7 +185,7 @@ Widget buildWidgetDropdown(
 
 Widget buildStopDropdown() {
   return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 16.0,),
+    padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 8.0,),
     child: Container(
       decoration: BoxDecoration(
         color: Colors.grey.shade200,
@@ -229,7 +229,7 @@ Widget buildDropdown(BuildContext context, String title, List<String> content) {
     title: title,
     children: content
         .map((line) => Padding(
-              padding: const EdgeInsets.fromLTRB(20, 6, 16, 6),
+              padding: const EdgeInsets.fromLTRB(20, 6, 16, 8),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -308,7 +308,7 @@ Widget buildDropdownBase({
   required List<Widget> children,
 }) {
   return Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
+    padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
     child: Container(
       decoration: BoxDecoration(
         color: Colors.grey.shade200,

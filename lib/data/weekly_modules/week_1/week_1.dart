@@ -136,17 +136,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:hero_minds/data/weekly_modules/widget_manager.dart';
- 
+
 import 'package:hero_minds/models/meditation_model.dart';
- 
+import 'package:hero_minds/widgets/Common/network_video_button.dart';
+
 class Week1 extends StatelessWidget {
   const Week1({super.key});
- 
+
 //Conttent in Week 1
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(1.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -157,19 +158,56 @@ class Week1 extends StatelessWidget {
           // ),
           //Videos needs to be changed with the one given
           const SizedBox(height: 1),
- 
+
+          // Module(
+          //     title: "What is Mindfulness?",
+          //     assetUrl:
+          //         "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713",
+          //     isVideo: true,
+          //     isCompleted: false),
+          // Module(
+          //     title: "Hero Mind Introduction",
+          //     assetUrl:
+          //         "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20Two.mp4?alt=media&token=b3e9868b-668c-4828-893e-6f01d96f4bf8'",
+          //     isVideo: true,
+          //     isCompleted: false),
+          // Module(
+          //     title: "Hero Mind App Introduction",
+          //     assetUrl:
+          //         "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FintroHero.mp4?alt=media&token=e42c12c6-dda6-4ee0-9997-f6079d09250c",
+          //     isVideo: true,
+          //     isCompleted: false)
+
+          NetworkVideoButton(
+            title: "What is Mindfulness?",
+            url:
+                "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713",
+          ),
+
+          NetworkVideoButton(
+            title: "Hero Mind Introduction",
+            url:
+                "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20Two.mp4?alt=media&token=b3e9868b-668c-4828-893e-6f01d96f4bf8'",
+          ),
+
+          NetworkVideoButton(
+            title: "Hero Mind App Introduction",
+            url:
+                "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FintroHero.mp4?alt=media&token=e42c12c6-dda6-4ee0-9997-f6079d09250c",
+          ),
+
           buildDropdownParagraph(
             context,
             'Brief Overview of Week 1',
             'Mindfulness is the awareness that arises when we intentionally pay attention to the present moment without judgment. This capacity for mindfulness already exists within us — we simply need to remember to tap into it. This is why consistent practice is so important.',
           ),
-          //video needs to be updated once Dr. chang gives us
-          // sectionWrapper(buildVideoButton('Turn Off Autopilot',
-          //     'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/audio%2Fautopilot.mp3?alt=media&token=11313ca4-dc0f-4baa-871b-1337bd4b399e')), //temp link
-          sectionWrapper(buildVideoButton('Mindfulness and 1st Responders',
-              'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2Fmindful1.mp4?alt=media&token=dd976c9b-bbd0-466c-9fab-3fb3b77b37cd')),
-          
- 
+
+          NetworkVideoButton(
+            title: 'Mindfulness and 1st Responders',
+            url:
+                'https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2Fmindful1.mp4?alt=media&token=dd976c9b-bbd0-466c-9fab-3fb3b77b37cd',
+          ),
+
           buildDropdown(
             context,
             'Three Questions to Consider',
@@ -180,7 +218,7 @@ class Week1 extends StatelessWidget {
             ],
           ),
           //Body scan all 3 videos to be accessed by user here(as a drop down)
- 
+
           buildWidgetDropdown(
             context,
             'Formal Practice every day - Body Scan (any length)',
@@ -229,13 +267,7 @@ class Week1 extends StatelessWidget {
               ),
             ],
           ),
- 
-          // buildDropdownParagraph(
-          //   context,
-          //   'Formal Practice every day - Body Scan (any length)',
-          //   'Videos coming soon',
-          // ),
- 
+
           buildDropdownParagraph(
             context,
             'Informal Practice',
@@ -276,11 +308,10 @@ class Week1 extends StatelessWidget {
               ),
             ),
           ),
- 
+
           const SizedBox(height: 30),
         ],
       ),
     );
   }
 }
- 

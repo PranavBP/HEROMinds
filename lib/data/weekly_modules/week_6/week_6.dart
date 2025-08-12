@@ -24,14 +24,13 @@ class Week6 extends StatelessWidget {
             'Brief Overview of Week 6',
             'Studies have found that practicing mindfulness every day can actually change the structure of the brain. Just like regular workouts build physical strength, daily mindfulness can boost the brain’s ability to handle stress, stay focused, manage emotions, and connect us more deeply with ourselves, our values, and the people around us.',
           ),
-          // const SizedBox(height: 8),
-          sectionWrapper(
-            buildYoutubeVideoButton(
-              context,
-              'Neuroscience of Mindfulness',
-              'https://www.youtube.com/watch?v=WuyPuH9ojCE',
-            ),
+          
+          buildYoutubeVideoButton(
+            context,
+            'Neuroscience of Mindfulness',
+            'https://www.youtube.com/watch?v=WuyPuH9ojCE',
           ),
+          
           buildDropdown(
             context,
             'Three Questions to Consider',
@@ -48,7 +47,7 @@ class Week6 extends StatelessWidget {
               title: "Next Steps",
               description:
                   "Reconnect with the present moment and regain mindful control.",
-              duration: 95,
+              duration: 47,
               track: "nextstep",
               trackExtension: "mp3",
               image: "assets/mindfulness/photo13.jpg",

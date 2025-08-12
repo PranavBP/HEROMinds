@@ -16,24 +16,24 @@ final List<Activity> activities = [
       desc: "Get Started!",
       image: "assets/images/intro.jpg",
       modules: [
-        Module(
-            title: "What is Mindfulness?",
-            assetUrl:
-                "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713",
-            isVideo: true,
-            isCompleted: false),
-        Module(
-            title: "Hero Mind Introduction",
-            assetUrl:
-                "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20Two.mp4?alt=media&token=b3e9868b-668c-4828-893e-6f01d96f4bf8'",
-            isVideo: true,
-            isCompleted: false),
-        Module(
-            title: "Hero Mind App Introduction",
-            assetUrl:
-                "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FintroHero.mp4?alt=media&token=e42c12c6-dda6-4ee0-9997-f6079d09250c",
-            isVideo: true,
-            isCompleted: false)
+        // Module(
+        //     title: "What is Mindfulness?",
+        //     assetUrl:
+        //         "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20One.mp4?alt=media&token=2db95738-3201-458b-9390-03dd55ba3713",
+        //     isVideo: true,
+        //     isCompleted: false),
+        // Module(
+        //     title: "Hero Mind Introduction",
+        //     assetUrl:
+        //         "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FWhitfield%20-%20Video%20Two.mp4?alt=media&token=b3e9868b-668c-4828-893e-6f01d96f4bf8'",
+        //     isVideo: true,
+        //     isCompleted: false),
+        // Module(
+        //     title: "Hero Mind App Introduction",
+        //     assetUrl:
+        //         "https://firebasestorage.googleapis.com/v0/b/senior-pal-620d4.appspot.com/o/videos%2FintroHero.mp4?alt=media&token=e42c12c6-dda6-4ee0-9997-f6079d09250c",
+        //     isVideo: true,
+        //     isCompleted: false)
       ],
       data: const Week1()),
   // Activity(
