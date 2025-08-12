@@ -295,14 +295,14 @@ class ModuleScreen extends ConsumerWidget {
                       ),
                       onTap: () {
                         if (isYouTubeUrl(module.assetUrl)) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (ctx) => YouTubePlayerScreen(
-                                videoUrl: module.assetUrl,
-                              ),
-                            ),
-                          );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (ctx) => YouTubePlayerScreen(
+                          //       videoUrl: module.assetUrl,
+                          //     ),
+                          //   ),
+                          // );
                         } else {
                           Navigator.push(
                             context,

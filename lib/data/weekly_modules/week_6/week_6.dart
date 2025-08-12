@@ -26,7 +26,8 @@ class Week6 extends StatelessWidget {
           ),
           // const SizedBox(height: 8),
           sectionWrapper(
-            buildVideoButton(
+            buildYoutubeVideoButton(
+              context,
               'Neuroscience of Mindfulness',
               'https://www.youtube.com/watch?v=WuyPuH9ojCE',
             ),

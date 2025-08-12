@@ -241,6 +241,41 @@ class Week1 extends StatelessWidget {
             'Informal Practice',
             'Mindful Eating - Choose one meal, or even just part of a meal, to eat with full awareness. Focus on the experience using all your senses—taste, smell, texture, and the act of eating itself.',
           ),
+
+          Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: buildMeditationCard(
+              context,
+              Meditation(
+                title: "Raisin Meditation",
+                description:
+                    "Raisin meditation is a short mindfulness exercise where you take a single raisin and focus on it as if you’ve never seen one before—observing its texture, color, and smell, feeling it in your hand, and slowly tasting it. The goal is to fully experience the moment and bring awareness to a simple act like eating.",
+                duration: 275,
+                track: "raisin",
+                trackExtension: "mp3",
+                image: "assets/mindfulness/photo5.jpg",
+                backgroundVideo: "sittingMedi",
+                category: "Body Scan Practices",
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: buildMeditationCard(
+              context,
+              Meditation(
+                title: "Turn Off Auto Pilot",
+                description:
+                    "Turn Off Autopilot is a mindfulness practice that helps you break free from going through the day on habit mode. By pausing, noticing your surroundings, thoughts, and actions, you shift from automatic reactions to intentional awareness, allowing you to experience life more fully in the present moment.",
+                duration: 85,
+                track: "autopilot",
+                trackExtension: "mp3",
+                image: "assets/mindfulness/photo8.jpg",
+                backgroundVideo: "tenMinBreathe",
+                category: "Body Scan Practices",
+              ),
+            ),
+          ),
  
           const SizedBox(height: 30),
         ],
