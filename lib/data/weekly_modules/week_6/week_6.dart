@@ -9,7 +9,7 @@ class Week6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(1.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -25,11 +25,7 @@ class Week6 extends StatelessWidget {
             'Studies have found that practicing mindfulness every day can actually change the structure of the brain. Just like regular workouts build physical strength, daily mindfulness can boost the brain’s ability to handle stress, stay focused, manage emotions, and connect us more deeply with ourselves, our values, and the people around us.',
           ),
 
-          buildYoutubeVideoButton(
-            context,
-            'Neuroscience of Mindfulness',
-            'https://www.youtube.com/watch?v=WuyPuH9ojCE',
-          ),
+          YouTubeButton(title: "Neuroscience of Mindfulness", videoId: 'WuyPuH9ojCE'),
 
           buildDropdown(
             context,
@@ -41,18 +37,21 @@ class Week6 extends StatelessWidget {
             ],
           ),
 
-          buildMeditationCard(
-            context,
-            Meditation(
-              title: "Next Steps",
-              description:
-                  "Reflect on your journey, honor your progress, and set empowering goals for what’s next.",
-              duration: 64,
-              track: "nextstep",
-              trackExtension: "mp3",
-              image: "assets/mindfulness/photo13.jpg",
-              backgroundVideo: "sleepMedi",
-              category: "Mindfulness Practices",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: buildMeditationCard(
+              context,
+              Meditation(
+                title: "Next Steps",
+                description:
+                    "Reflect on your journey, honor your progress, and set empowering goals for what’s next.",
+                duration: 64,
+                track: "nextstep",
+                trackExtension: "mp3",
+                image: "assets/mindfulness/photo13.jpg",
+                backgroundVideo: "sleepMedi",
+                category: "Mindfulness Practices",
+              ),
             ),
           ),
 

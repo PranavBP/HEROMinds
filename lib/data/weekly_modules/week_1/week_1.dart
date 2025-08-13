@@ -150,7 +150,7 @@ class Week1 extends ConsumerWidget {
     final theme = ref.watch(themeNotifierProvider);
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(1.0),
       child: DefaultTextStyle.merge(
         style: TextStyle(color: theme.textColor),
         child: Column(

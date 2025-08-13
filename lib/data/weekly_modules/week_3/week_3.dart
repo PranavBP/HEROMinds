@@ -26,11 +26,7 @@ class Week3 extends StatelessWidget {
             'Stress isn’t a bad thing; it can be a powerful motivator and even a lifesaver in certain situations. However, when stress becomes chronic, it can take a serious toll on our physical health, mental well-being, and our relationships. Practicing mindfulness can help us shift our perception of stress and change the way we respond to it.',
           ),
 
-          buildYoutubeVideoButton(
-            context,
-            'Types of Stress',
-            'https://www.youtube.com/watch?v=FnMLlQaq5T0',
-          ),
+          YouTubeButton(title: "Types of Stress", videoId: 'FnMLlQaq5T0'),
           
           buildDropdown(
             context,
